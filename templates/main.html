@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style type = "text/css">
+    #tidal {
+        text-align: center;
+        color: red;
+        background-color: blue;
+        padding: 10px;
+    }
+
+    .action {
+        background-color: LightBlue;
+        text-align: center;
+    }
+    </style>
 
     <meta charset="UTF-8">
-    <title>text editor</title>
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>text editor</title>
 </head>
 <body>
 
-<h1>
+<h1 id="tidal">
     Text Editor
 </h1>
 <div class="container">
     <div class="row fill">
         <div class="col">
-            <form action="/excitement">
+            <form action="/excitement" class="action">
                 Speak with enthusiasm <br>
 
                 <input type="text" name="t">
@@ -26,7 +38,7 @@
         </div>
 
         <div class="col">
-            <form action="/CaseCheck">
+            <form action="/CaseCheck" class = "action">
                 Fix cases <br>
 
                 <input type="text" name="t">
@@ -42,7 +54,7 @@
 <div class="container">
     <div class="row fill">
         <div class="col">
-            <form action="/sarcasm">
+            <form action="/sarcasm" class = "action">
                 make sarcastic <br>
 
                 <input type="text" name="t">
@@ -53,7 +65,7 @@
         </div>
 
         <div class="col">
-            <form action="/CamelCase">
+            <form action="/CamelCase" class = "action">
                 remove spaces <br>
 
                 <input type="text" name="t">
